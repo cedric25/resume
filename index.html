@@ -5,9 +5,177 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+  <body class="bg-[#F3F3F3] text-sm">
+    <!-- Cadre 1330 * 940 = page de 21cm 29.7cm -->
+    <div class="mx-auto mb-36 mt-6 flex h-[1330px] w-[940px] bg-white print:mt-0">
+      <!-- Partie gauche -->
+      <div class="flex-1 pl-12 pr-10 pt-12">
+        <!-- --- HEADER --- -->
+        <div>
+          <h1 class="text-3xl">CÉDRIC NICOLOSO</h1>
+          <h2 class="text-lg text-primary">Senior Software Engineer</h2>
+          <div class="mt-1 text-gray-600">
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="inline h-4 w-4 text-gray-400"
+              >
+                <path
+                  stroke-linecap="round"
+                  d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25"
+                />
+              </svg>
+              cedric.nicoloso@pm.me</span
+            >
+            <span class="ml-2"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="inline h-4 w-4 text-gray-400"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                />
+              </svg>
+              Lyon, FR</span
+            >
+          </div>
+        </div>
+        <!-- --- ENTÊTE --- -->
+        <p class="mt-4 text-justify">
+          Fort de 10 ans d'expérience dans le développement logiciel en équipe, je me suis
+          spécialisé dans le web et l'écosystème JavaScript. J'ai à cœur d'être orienté produit et
+          utilisateurs ; j'ai un fort esprit d'initiative tout en aimant qu'on challenge mes choix.
+        </p>
+
+        <!-- --- EXPÉRIENCE --- -->
+        <h3 class="mt-10">EXPÉRIENCE</h3>
+        <hr class="mb-4 mt-1 block h-px w-full border-none bg-gray-300" />
+        <!-- ---------- INDY ---------- -->
+        <div class="grid grid-cols-[80px_1fr] gap-x-4 gap-y-3">
+          <div class="flex-shrink-0">
+            <div>2018 - 2023</div>
+            <div class="text-xs text-gray-500">(5 ans)</div>
+            <img src="/logo-indy.png" alt="Logo Indy" class="ml-px mt-2 h-4" />
+          </div>
+          <div>
+            Ingénieur R&D / lead tech chez <span class="font-medium">Indy</span>, Lyon
+            (https://www.indy.fr/)
+            <ul class="ml-5 list-disc text-xs">
+              <li>Lancement de deux nouvelles lignes de produit</li>
+              <li>Définition d'architectures techniques</li>
+              <li>Suivi des développeurs de mon équipe via des 1-1s réguliers</li>
+            </ul>
+          </div>
+          <!-- ---------- OCTO ---------- -->
+          <div class="flex-shrink-0">
+            <div>2015 - 2018</div>
+            <div class="text-xs text-gray-500">(3 ans)</div>
+            <img src="/logo-octo.png" alt="Logo OCTO Technology" class="ml-px mt-2 h-4" />
+          </div>
+          <div>
+            Ingénieur / consultant chez <span class="font-medium">OCTO Technology</span>, Sydney,
+            Australie
+            <ul class="ml-5 list-disc text-xs">
+              <li>
+                Missions de conception / développement chez des clients des secteurs bancaire /
+                aérien / de la santé
+              </li>
+            </ul>
+            <div class="text-xs text-gray-500">(Java, Scala,Node.js, Angular, Vue.js, AWS)</div>
+          </div>
+          <!-- ---------- ZENIKA ---------- -->
+          <div class="flex-shrink-0">
+            <div>2014 - 2015</div>
+            <div class="text-xs text-gray-500">(1 an)</div>
+            <img src="/logo-zenika.png" alt="Logo Zenika" class="ml-px mt-2 h-4" />
+          </div>
+          <div>
+            Ingénieur / consultant chez <span class="font-medium">Zenika</span>, Lyon
+            <ul class="ml-5 list-disc text-xs">
+              <li>Développement d’une application de gestion d’actes notariés</li>
+              <li>
+                Lead frontend sur une application d’assurance à destination des agriculteurs /
+                éleveurs. (équipe de 6 développeurs)
+              </li>
+            </ul>
+            <div class="text-xs text-gray-500">
+              (Java 1.7, Spring Boot, Hibernate, MySQL, ElasticSearch, AngularJS)
+            </div>
+          </div>
+          <!-- ---------- SQLI ---------- -->
+          <div class="flex-shrink-0">
+            <div>2012 - 2014</div>
+            <div class="text-xs text-gray-500">(2 ans)</div>
+            <img src="/logo-sqli.png" alt="Logo SQLI" class="ml-px mt-2 h-7" />
+          </div>
+          <div>
+            Ingénieur logiciel chez <span class="font-medium">SQLI</span>, Lyon
+            <ul class="ml-5 list-disc text-xs">
+              <li>
+                Projet au forfait pour un client grand compte du secteur de l’assurance > 4000
+                jours/hommes
+              </li>
+              <li>Formateur technique chez le client (pair programming)</li>
+              <li>Lead tech d’un groupe de 3 développeurs</li>
+            </ul>
+            <div class="text-xs text-gray-500">
+              (Java 1.6, SQL Server 2012, Hibernate, Spring, Struts2, JSP, JS / jQuery, jQuery-UI,
+              WebLogic 2012 / Tomcat, Eclipse / IntelliJ, SVN)
+            </div>
+          </div>
+        </div>
+
+        <!-- --- ÉTUDES ET DIPLÔMES --- -->
+        <h3 class="mt-10">ÉTUDES ET DIPLÔMES</h3>
+        <hr class="mb-4 mt-1 block h-px w-full border-none bg-gray-300" />
+        <div class="grid grid-cols-[40px_1fr] gap-x-4 gap-y-2">
+          <div>
+            <div>2011</div>
+          </div>
+          <div>
+            <span class="font-medium">Diplôme d’ingénieur</span>, spécialité Informatique - Polytech
+            Lyon
+            <ul class="ml-5 list-disc text-xs">
+              <li>Dernière année dans l’université de McMaster (Hamilton, Canada)</li>
+            </ul>
+          </div>
+          <div>
+            <div>2008</div>
+          </div>
+          <div>
+            <span class="font-medium">DUT</span> Informatique, Analyste / programmeur - IUT A
+            Université Lyon 1
+          </div>
+        </div>
+      </div>
+      <!-- ----- RIGHT PART ----- -->
+      <div class="w-[326px] border-t-[16px] border-[#233347] bg-[#22405C] text-white">
+        Something here soon
+      </div>
+    </div>
   </body>
 </html>
