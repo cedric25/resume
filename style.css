@@ -7,3 +7,7 @@
     font-family: 'Rubik', sans-serif;
   }
 }
+
+.chip {
+  @apply rounded bg-primary/20 px-1 py-px;
+}
