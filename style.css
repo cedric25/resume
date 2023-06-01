@@ -9,5 +9,5 @@
 }
 
 .chip {
-  @apply rounded bg-primary/20 px-1 py-px;
+  @apply rounded bg-primary/[.15] px-1 py-px;
 }
